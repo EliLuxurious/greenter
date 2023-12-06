@@ -1,14 +1,43 @@
+# Configuración de atributos para Git.
+
+# Establece que Git debe determinar automáticamente si un archivo es de texto o binario.
 * text=auto
+
+# Ignora la carpeta .github al realizar exportaciones, excluyéndola del resultado final (por ejemplo, al crear un archivo ZIP).
 /.github export-ignore
+
+# Ignora la carpeta tests al realizar exportaciones, excluyendo pruebas unitarias o de integración del entorno de producción.
 /tests export-ignore
+
+# Ignora la carpeta tools al realizar exportaciones, excluyendo herramientas de desarrollo o scripts innecesarios en producción.
 /tools export-ignore
+
+# Ignora el archivo .gitattributes al realizar exportaciones, evitando que se incluya en el resultado final.
 .gitattributes export-ignore
+
+# Ignora el archivo .gitignore al realizar exportaciones, evitando que se incluya en el resultado final.
 .gitignore export-ignore
+
+# Ignora el archivo .php_cs.dist al realizar exportaciones, excluyendo configuraciones de estilo y formato para el código PHP.
 .php_cs.dist export-ignore
+
+# Ignora el archivo .sonarcloud.properties al realizar exportaciones, excluyendo configuraciones específicas de SonarCloud.
 .sonarcloud.properties export-ignore
+
+# Ignora el archivo CHANGELOG.md al realizar exportaciones, excluyendo el registro de cambios en el resultado final.
 CHANGELOG.md export-ignore
+
+# Ignora el archivo phpstan.neon al realizar exportaciones, excluyendo configuraciones para la herramienta de análisis estático PHPStan.
 phpstan.neon export-ignore
+
+# Ignora el archivo psalm.xml al realizar exportaciones, excluyendo configuraciones para la herramienta de análisis estático Psalm.
 psalm.xml export-ignore
+
+# Ignora el archivo phpunit.xml.dist al realizar exportaciones, excluyendo configuraciones para PHPUnit.
 phpunit.xml.dist export-ignore
+
+# Ignora el archivo monorepo-builder.php al realizar exportaciones, excluyendo scripts o herramientas específicas de un monorepo.
 monorepo-builder.php export-ignore
+
+# Ignora todos los archivos con extensión .md al realizar exportaciones, excluyendo archivos Markdown en el directorio raíz del repositorio.
 /*.md export-ignore

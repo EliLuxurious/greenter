@@ -1,4 +1,13 @@
+# Este archivo .gitignore se utiliza para especificar patrones de archivos y carpetas que deben ser ignorados por Git.
+
+# Ignora la carpeta .idea/, que generalmente contiene configuraciones específicas de IDE.
 .idea/
+
+# Ignora la carpeta vendor/, que suele contener dependencias y librerías externas.
 vendor/
+
+# Ignora cualquier archivo o carpeta con la extensión .cache en el directorio raíz del repositorio.
 /*.cache
+
+# Ignora el archivo composer.lock, que registra las versiones exactas de las dependencias en un proyecto PHP.
 composer.lock
